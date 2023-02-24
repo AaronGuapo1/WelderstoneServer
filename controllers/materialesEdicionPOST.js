@@ -88,7 +88,7 @@ module.exports = async (req,res)=>{
     }
     
 
-    const {PinturaProductos} = cantidadrespetada[0]
+    const {PinturaProductos} = cantidadrespetada[i]
 
     for (let a=0; a<mateprod.length; a++){
         for (let j=0; j<PinturaProductos.length; j++){

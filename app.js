@@ -67,7 +67,7 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "https://welderstonepruebaserver.onrender.com/auth/google/welderstone"
+    callbackURL: "http://localhost:3000/auth/google/welderstone"
     //http://localhost:3000/auth/google/welderstone
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -85,7 +85,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
   clientID: process.env.FACEBOOK_APP_ID,
   clientSecret: process.env.FACEBOOK_APP_SECRET,
-  callbackURL: "https://welderstonepruebaserver.onrender.com/auth/facebook/welderstone"
+  callbackURL: "http://localhost:3000/auth/facebook/welderstone"
   //http://localhost:3000/auth/facebook/welderstone
 },
 function(accessToken, refreshToken, profile, cb) {
@@ -104,7 +104,7 @@ passport.use(new MicrosoftStrategy({
   // Standard OAuth2 options
   clientID: process.env.MICROSOFT_APP_ID,
   clientSecret: process.env.MICROSOFT_APP_SECRET,
-  callbackURL: "https://welderstonepruebaserver.onrender.com/auth/microsoft/welderstone",
+  callbackURL: "/http://localhost:3000/auth/microsoft/welderstone",
   scope: ['user.read'],
 //http://localhost:3000/auth/microsoft/welderstone
   // Microsoft specific options

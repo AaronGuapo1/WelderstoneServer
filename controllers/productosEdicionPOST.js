@@ -16,7 +16,7 @@ module.exports =  async (req,res)=>{
     if(req.body.descripcion !== '' ){
         await Producto.updateOne({nombre:req.body.NombreBusqueda},{$set:{descripcion:req.body.descripcion}});
     }
-    if(req.body.codigo !== '' ){
+    if(req.body.Codigo !== '' ){
         await Producto.updateOne({nombre:req.body.NombreBusqueda},{$set:{Codigo:req.body.Codigo}});
     }
     if(req.body.unidad !== '' ){
